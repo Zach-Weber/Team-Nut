@@ -12,6 +12,9 @@ https://docs.google.com/spreadsheets/d/1OvFTLQzOzzcq4zAsxBPSqiyN5ARPBkcqoBZuPa-N
 
 ### Pitch Presentation
 https://docs.google.com/presentation/d/1-5izmCGSC6MOeY0Gpwm_dgc-hKxpGTnGflWzh9va3Lc/edit?usp=sharing
+
+### Schedules
+https://docs.google.com/spreadsheets/d/19Em5CBO2ymeFC5B--mSLy7dt5S6KZ6oLOAOInFh3Jhk/edit?usp=sharing
   
 ## Team Members
 Gamer Director: Xander  
