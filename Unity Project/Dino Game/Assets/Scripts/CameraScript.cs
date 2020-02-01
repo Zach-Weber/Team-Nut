@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/******************************
+ * CameraScript.cs
+ * By: Conor Brennan
+ * Last Edited: 1/30/2020
+ * Description: script that makes main camera follow the player along their x position
+ ******************************/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +26,7 @@ public class CameraScript : MonoBehaviour
             Vector3 newPos = transform.position;
             //updates temp vector's x to match x of player
             newPos.x = player.transform.position.x;
-            //offsets temp vector by 7.5
+            //offsets temp vector
             newPos.x += 7.5f;
             //sets camera position to temp vector
             transform.position = newPos;
