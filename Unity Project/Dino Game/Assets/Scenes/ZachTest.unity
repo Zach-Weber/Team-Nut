@@ -337,6 +337,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpSpeed: 15
+  started: 0
+  jumped: 0
 --- !u!61 &1202532479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -560,6 +562,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491794828771137817, guid: 7b941a0bf1f184b499ae3bbd00a080d2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491794829181235329, guid: 7b941a0bf1f184b499ae3bbd00a080d2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 1491794829399343112, guid: 7b941a0bf1f184b499ae3bbd00a080d2,
         type: 3}
