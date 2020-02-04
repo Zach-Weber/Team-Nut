@@ -10,10 +10,13 @@ https://docs.google.com/document/d/1EN_xvXW9OCzCE16cvcmcADQjfB14sCnMochooJclEn8/
 ### Asset List Spreadsheet:  
 https://docs.google.com/spreadsheets/d/1OvFTLQzOzzcq4zAsxBPSqiyN5ARPBkcqoBZuPa-NfDo/edit?usp=sharing  
 
-### Pitch Presentation
+### Style Guide:  
+https://docs.google.com/presentation/d/1qMOwyQQz7e4QFa1L4-4pzbsn0N46c2rJjOSWJc8b7Cc/edit?usp=sharing  
+  
+### Pitch Presentation:
 https://docs.google.com/presentation/d/1-5izmCGSC6MOeY0Gpwm_dgc-hKxpGTnGflWzh9va3Lc/edit?usp=sharing
 
-### Schedules
+### Schedules:
 https://docs.google.com/spreadsheets/d/19Em5CBO2ymeFC5B--mSLy7dt5S6KZ6oLOAOInFh3Jhk/edit?usp=sharing
   
 ## Team Members
