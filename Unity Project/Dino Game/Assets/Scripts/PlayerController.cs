@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
                 Jump();
                 jumped = true;
             }
-            if (myRB.position.y <= -1.99f && jumped == true)
+            if (grounded == true && jumped == true)
             {
                 started = true;
                 Debug.Log("Started");
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //checks if player is on ground
-        if (myRB.velocity.y == 0)
+        if (grounded == true)
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 Jump();
@@ -69,7 +69,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.tag == "Obstacle")
+        if (collision.collider.gameObject.tag == "Ground")
+        {
+            grounded = true;
+        }
         //checks if player collided with a cactus
         if (collision.collider.gameObject.tag == "Obstacle")
         {
