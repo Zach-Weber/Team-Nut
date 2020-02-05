@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56f60dd92ba14394e8a4bc8d0d352a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   groundSection: {fileID: 218402363}
   groundPos: 54
   playerPos: 21
@@ -187,7 +188,7 @@ GameObject:
   - component: {fileID: 869723167}
   m_Layer: 0
   m_Name: StartGround
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,6 +340,7 @@ MonoBehaviour:
   jumpSpeed: 15
   started: 0
   jumped: 0
+  grounded: 1
 --- !u!61 &1202532479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -516,7 +518,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

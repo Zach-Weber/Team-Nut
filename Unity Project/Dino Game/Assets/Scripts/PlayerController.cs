@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 1f;
     public bool started = false;
     public bool jumped = false;
+    public bool grounded = true;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
                 Jump();
                 jumped = true;
             }
-            if (myRB.position.y != 0 && jumped == true)
+            if (myRB.position.y <= -1.99f && jumped == true)
             {
                 started = true;
                 Debug.Log("Started");
@@ -61,9 +62,9 @@ public class PlayerController : MonoBehaviour
                 Vector3 jumpMovement = new Vector3(0.0f, 1.0f, 0.0f);
                 //sets player velocity to jumpmovement * jumpspeed
                 myRB.velocity = jumpMovement * jumpSpeed;
+                grounded = false;
             }
         }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
