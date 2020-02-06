@@ -812,6 +812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d24e726250c6b48820dd74601999fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camPos: 0
 --- !u!81 &1521471204
 AudioListener:
   m_ObjectHideFlags: 0
