@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: 1550127583198544421
     second: GroundWhite_0
+  - first:
+      213: 100905692614345730
+    second: GroundWhite_0
+  - first:
+      213: -3846443878164903392
+    second: GroundWhite_1
+  - first:
+      213: 7535629541108437671
+    second: GroundWhite_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -105,18 +114,60 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 64
         width: 164
-        height: 96
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5228511f2d8238510800000000000000
-      internalID: 1550127583198544421
+      spriteID: 204c71c513d766100800000000000000
+      internalID: 100905692614345730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundWhite_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 164
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a41811cafae9ac0800000000000000
+      internalID: -3846443878164903392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundWhite_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 164
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a255b4642fe39860800000000000000
+      internalID: 7535629541108437671
       vertices: []
       indices: 
       edges: []

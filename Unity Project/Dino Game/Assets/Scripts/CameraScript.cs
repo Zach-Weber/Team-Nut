@@ -10,6 +10,7 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
+    public float camPos;
     GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class CameraScript : MonoBehaviour
             //updates temp vector's x to match x of player
             newPos.x = player.transform.position.x;
             //offsets temp vector
-            newPos.x += 7.5f;
+            newPos.x += camPos;
             //sets camera position to temp vector
             transform.position = newPos;
         }
