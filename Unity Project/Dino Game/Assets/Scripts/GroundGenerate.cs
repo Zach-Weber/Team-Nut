@@ -11,11 +11,18 @@ using UnityEngine;
 public class GroundGenerate : MonoBehaviour
 {
     GameObject player;
-    public GameObject ground1;
-    public GameObject ground2;
-    public GameObject ground3;
-    public int groundPos;
-    public int playerPos;
+    public GameObject ground;
+    public GameObject groundSprite1;
+    public GameObject groundSprite2;
+    public GameObject groundSprite3;
+    public float groundPos;
+    public float playerPos;
+    public float spritePos1;
+    public float spritePos2;
+    public float spritePos3;
+    public float spritePos4;
+    private GameObject spriteSelect;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -30,27 +37,39 @@ public class GroundGenerate : MonoBehaviour
         {
             if (player.transform.position.x >= playerPos)
             {
-                switch (Random.Range(1, 3))
-                {
-                    case 1: // Ground w/ no bumps
-                        Instantiate(ground1, new Vector3(groundPos, 0, 0), Quaternion.identity);
-                        groundPos += 30;
-                        playerPos += 30;
-                        break;
+                Instantiate(ground, new Vector3(groundPos, -3, 0), Quaternion.identity);
+                groundPos += 10.248f;
+                playerPos += 10.248f;
 
-                    case 2: // Ground w/ Double Bumps
-                        Instantiate(ground2, new Vector3(groundPos, 0, 0), Quaternion.identity);
-                        groundPos += 30;
-                        playerPos += 30;
-                        break;
+                Instantiate(SelectSprite(), new Vector3(spritePos1, -2.36f, 0), Quaternion.identity);
+                spritePos1 += 10.248f;
 
-                    case 3: // Ground w/ Bump and Divot
-                        Instantiate(ground3, new Vector3(groundPos, 0, 0), Quaternion.identity);
-                        groundPos += 30;
-                        playerPos += 30;
-                        break;
-                }
+                Instantiate(groundSprite1, new Vector3(spritePos2, -2.36f, 0), Quaternion.identity);
+                spritePos2 += 10.248f;
+
+                Instantiate(SelectSprite(), new Vector3(spritePos3, -2.36f, 0), Quaternion.identity);
+                spritePos3 += 10.248f;
+
+                Instantiate(groundSprite1, new Vector3(spritePos4, -2.36f, 0), Quaternion.identity);
+                spritePos4 += 10.248f;
             }
         }
+    }
+
+    private GameObject SelectSprite()
+    {
+        switch (Random.Range(1, 4))
+        {
+            case 1:
+                spriteSelect = groundSprite1;
+                break;
+            case 2:
+                spriteSelect = groundSprite2;
+                break;
+            case 3:
+                spriteSelect = groundSprite3;
+                break;
+        }
+        return spriteSelect;
     }
 }
