@@ -58,9 +58,20 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 Jump();
-            else if (Input.GetKey(KeyCode.DownArrow))
-                Debug.Log("Crouching");
-                Crouch();
+            else
+            {
+                if (crouching == false && Input.GetKey(KeyCode.DownArrow))
+                {
+                    crouching = true;
+                    Debug.Log("Crouching");
+                }
+                else
+                {
+                    crouching = false;
+                }
+                    
+            }
+                
         }
                 
         void Jump()
@@ -72,10 +83,6 @@ public class PlayerController : MonoBehaviour
                 myRB.velocity = jumpMovement * jumpSpeed;
                 grounded = false;
             }
-        }
-        void Crouch()
-        {
-            crouching = true;
         }
     }
 
@@ -102,11 +109,11 @@ public class PlayerController : MonoBehaviour
             myAnim.SetInteger("State", 0);
 
         //state 1 is running
-        else if (started == true && grounded == true)
+        else if (started == true && grounded == true && crouching == false)
             myAnim.SetInteger("State", 1);
 
         //state 2 is crouching
-        else if (started == true && grounded == true && crouching == true)
+        else if (crouching == true)
             myAnim.SetInteger("State", 2);
 
         //state 3 is death
