@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Prototype.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ZachTest.unity
     guid: babc5a294b573fb43b0e9a416c6e775e
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 1ae364cec631e154b9d70a011b2b672c
   m_configObjects: {}

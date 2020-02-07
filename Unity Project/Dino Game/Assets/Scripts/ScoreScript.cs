@@ -29,7 +29,7 @@ public class ScoreScript : MonoBehaviour
 
     public void UpdateScore()
     {
-        if (playerController.started)
+        //if (playerController.started)
         {
             score = +(int)GameObject.Find("Player").transform.position.x;
             scoreText.text = score.ToString("D5");

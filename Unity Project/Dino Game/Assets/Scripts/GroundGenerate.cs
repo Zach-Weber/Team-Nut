@@ -1,8 +1,8 @@
 ﻿/******************************
  * GroundGenerate.cs
  * By: Conor Brennan
- * Last Edited: 1/31/2020
- * Description: simple ground generation, not random, just for prototype
+ * Last Edited: 2/7/2020
+ * Description: randomly generates obstacles and ground terrain sprites
  ******************************/
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +19,9 @@ public class GroundGenerate : MonoBehaviour
     public GameObject bigCactus;
     public GameObject tripleCactus;
     public GameObject quadCactus;
+    public GameObject GameOverText;
+    public GameObject ResetButton;
+    public GameObject canvas;
     public float groundPos;
     public float playerPos;
     public float spritePos1;
@@ -30,7 +33,7 @@ public class GroundGenerate : MonoBehaviour
     public float obstacleRangeMin;
     private GameObject spriteSelect;
     private GameObject obstacleSelect;
-    
+    private int cloneCount;
 
     // Start is called before the first frame update
     void Start()
@@ -63,8 +66,21 @@ public class GroundGenerate : MonoBehaviour
 
                 
                 Instantiate(SelectObstacle(), new Vector3(obstaclePos + Random.Range(obstacleRangeMin, obstacleRangeMax), -2, 0), Quaternion.identity);
-                obstaclePos += 10.248f;
+                obstaclePos += 15f;
             }
+
+            if (PlayerController.dead == true && cloneCount == 0)
+            {
+                GameObject camera = FindObjectOfType<CameraScript>().gameObject;
+                float cameraPos = camera.transform.position.x;
+
+                Instantiate(GameOverText, new Vector3(cameraPos, -1, 0), Quaternion.identity);
+                Instantiate(ResetButton, new Vector3(0, 0, 0), Quaternion.identity);
+                cloneCount++;
+            }
+            else if (PlayerController.dead != true)
+                cloneCount = 0;
+
         }
     }
 

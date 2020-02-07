@@ -1,7 +1,7 @@
 ﻿/******************************
  * PlayerController.cs
  * By: Conor Brennan
- * Last Edited: 2/3/2020
+ * Last Edited: 2/7/2020
  * Description: gives player forward movement at game start and controls jumping
  ******************************/
 using System.Collections;
@@ -15,75 +15,93 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D myRB;
     public float speed = 5f;
     public float jumpSpeed = 1f;
-    public bool started = false;
-    public bool jumped = false;
-    public bool grounded = true;
-    public bool crouching = false;
-    public bool dead = false;
+    public static bool started = false;
+    public static bool jumped = false;
+    public static bool grounded = true;
+    public static bool crouching = false;
+    public static bool dead;
 
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
+        dead = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         ChangeMoveState();
-        if(started == false)
+        if(started == false && grounded == true && dead != true)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Jump();
                 jumped = true;
             }
-            if (grounded == true && jumped == true)
+            if (jumped == true && grounded == true)
             {
                 started = true;
                 Debug.Log("Started");
             }
         }
         //gives player forward movement
-        if (started == true)
+        if (started == true && dead != true)
         {
             Vector3 newVel = myRB.velocity;
             newVel.x = speed;
             myRB.velocity = newVel;  
         }
 
-        //checks if player is on ground
+        //checks if player is on ground and not dead
         if (grounded == true)
         {
             if (Input.GetKeyDown(KeyCode.Space))
+            {
                 Jump();
+            }
+                
             else
             {
-                if (crouching == false && Input.GetKey(KeyCode.DownArrow))
+                if (dead != true)
                 {
-                    crouching = true;
-                    Debug.Log("Crouching");
+                    if (Input.GetKey(KeyCode.DownArrow) == true)
+                    {
+                        crouching = true;
+                        Debug.Log("Crouching");
+                    }
+                    else if (Input.GetKey(KeyCode.DownArrow) != true)
+                    {
+                        crouching = false;
+                    }
                 }
-                else
-                {
-                    crouching = false;
-                }
-                    
-            }
-                
+
+            }       
         }
-                
-        void Jump()
+
+        if (dead == true)
         {
-            {
-                //creates new vector for jump movement
-                Vector3 jumpMovement = new Vector3(0.0f, 1.0f, 0.0f);
-                //sets player velocity to jumpmovement * jumpspeed
-                myRB.velocity = jumpMovement * jumpSpeed;
-                grounded = false;
-            }
+            myRB.isKinematic = true;
+            myRB.velocity = new Vector3(0, 0, 0);
         }
+           
+        else if (dead == false)
+            myRB.isKinematic = false;
+    }
+
+    void Jump()
+    {
+        if ( dead != true)
+        {
+            //creates new vector for jump movement
+            SoundManager.PlaySound("Jump");
+            Vector3 jumpMovement = new Vector3(0.0f, 1.0f, 0.0f);
+            //sets player velocity to jumpmovement * jumpspeed
+            myRB.velocity = jumpMovement * jumpSpeed;
+            grounded = false;
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -96,7 +114,9 @@ public class PlayerController : MonoBehaviour
         //checks if player collided with a cactus
         if (collision.collider.gameObject.tag == "Obstacle")
         {
-            Destroy(gameObject);
+            SoundManager.PlaySound("Hit");
+            dead = true;
+            //Destroy(gameObject);
             started = false;
             jumped = false;
         }
