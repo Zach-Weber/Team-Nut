@@ -15,13 +15,21 @@ public class GroundGenerate : MonoBehaviour
     public GameObject groundSprite1;
     public GameObject groundSprite2;
     public GameObject groundSprite3;
+    public GameObject smallCactus;
+    public GameObject bigCactus;
+    public GameObject tripleCactus;
+    public GameObject quadCactus;
     public float groundPos;
     public float playerPos;
     public float spritePos1;
     public float spritePos2;
     public float spritePos3;
     public float spritePos4;
+    public float obstaclePos;
+    public float obstacleRangeMax;
+    public float obstacleRangeMin;
     private GameObject spriteSelect;
+    private GameObject obstacleSelect;
     
 
     // Start is called before the first frame update
@@ -52,6 +60,10 @@ public class GroundGenerate : MonoBehaviour
 
                 Instantiate(groundSprite1, new Vector3(spritePos4, -2.36f, 0), Quaternion.identity);
                 spritePos4 += 10.248f;
+
+                
+                Instantiate(SelectObstacle(), new Vector3(obstaclePos + Random.Range(obstacleRangeMin, obstacleRangeMax), -2, 0), Quaternion.identity);
+                obstaclePos += 10.248f;
             }
         }
     }
@@ -71,5 +83,25 @@ public class GroundGenerate : MonoBehaviour
                 break;
         }
         return spriteSelect;
+    }
+
+    private GameObject SelectObstacle()
+    {
+        switch (Random.Range(1, 5))
+        {
+            case 1:
+                obstacleSelect = smallCactus;
+                break;
+            case 2:
+                obstacleSelect = bigCactus;
+                break;
+            case 3:
+                obstacleSelect = tripleCactus;
+                break;
+            case 4:
+                obstacleSelect = quadCactus;
+                break;
+        }
+        return obstacleSelect;
     }
 }
