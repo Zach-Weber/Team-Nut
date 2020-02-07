@@ -11,22 +11,27 @@ using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
+    Animator myAnim;
     Rigidbody2D myRB;
     public float speed = 5f;
     public float jumpSpeed = 1f;
     public bool started = false;
     public bool jumped = false;
     public bool grounded = true;
+    public bool crouching = false;
+    public bool dead = false;
 
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
+        myAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        ChangeMoveState();
         if(started == false)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -53,6 +58,9 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 Jump();
+            else if (Input.GetKey(KeyCode.DownArrow))
+                Debug.Log("Crouching");
+                Crouch();
         }
                 
         void Jump()
@@ -65,10 +73,15 @@ public class PlayerController : MonoBehaviour
                 grounded = false;
             }
         }
+        void Crouch()
+        {
+            crouching = true;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.collider.name);
         if (collision.collider.gameObject.tag == "Ground")
         {
             grounded = true;
@@ -81,4 +94,24 @@ public class PlayerController : MonoBehaviour
             jumped = false;
         }
     }
+
+    private void ChangeMoveState()
+    {
+        //state 0 is jumping
+        if (started == true && grounded == false)
+            myAnim.SetInteger("State", 0);
+
+        //state 1 is running
+        else if (started == true && grounded == true)
+            myAnim.SetInteger("State", 1);
+
+        //state 2 is crouching
+        else if (started == true && grounded == true && crouching == true)
+            myAnim.SetInteger("State", 2);
+
+        //state 3 is death
+        else if (dead == true)
+            myAnim.SetInteger("State", 3);
+    }
+
 }
