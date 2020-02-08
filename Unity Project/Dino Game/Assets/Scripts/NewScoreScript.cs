@@ -13,10 +13,12 @@ public class NewScoreScript : MonoBehaviour
 {
     private static Text Score;
     private static Text HighScore;
+    private float timer;
     public PlayerController playerController;
 
-     int score = 0;
+    int score = 0;
     public int highScore = 0;
+    public float scoreSpeed = 0.5f;
     private bool played = false;
 
     // Start is called before the first frame update
@@ -30,7 +32,7 @@ public class NewScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         UpdateScore();
         UpdateHighScore();
 
@@ -48,9 +50,24 @@ public class NewScoreScript : MonoBehaviour
     {
         if (PlayerController.started == true)
         {
-            score = +(int)GameObject.Find("Player").transform.position.x;
-            score += 4;
+            /**
+            score = 100;
+            timer = Time.deltaTime;
+            if (timer > scoreSpeed)
+            {
+                score += 1;
+                Debug.Log("scored");
+                
+                timer = 0;
+            }**/
+            Debug.Log(Time.deltaTime);
+
+            score += (int) (Time.deltaTime * 125);
+
+            // score = +(int)GameObject.Find("Player").transform.position.x;
+            // score += 4;
             Score.text = score.ToString("D5");
+
         }
         return;
     }
