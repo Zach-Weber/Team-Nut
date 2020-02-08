@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 3ea27a0b27e87fc479ce88d8649080b1
+guid: f6a7b51ff5177ef41ae1a5a44d51c65b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2794630541141297616
-    second: Short Snek_0
+      213: -7413979819777789378
+    second: Reset Button_0
   - first:
-      213: 8215402793939036236
-    second: Short Snek_1
+      213: 2544048635947661864
+    second: Reset Button_1
   - first:
-      213: 3683347953750123411
-    second: Short Snek_2
+      213: -6730185336441956134
+    second: Reset Button_2
   - first:
-      213: -8425550642943041658
-    second: Short Snek_3
-  - first:
-      213: -2047522327601766948
-    second: Short Snek_4
-  - first:
-      213: -7149667135859657686
-    second: Short Snek_5
-  - first:
-      213: 7962639933741717167
-    second: Short Snek_6
+      213: 699693442518515006
+    second: Reset Button_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -119,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Short Snek_0
+      name: Reset Button_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 129
-        width: 58
-        height: 63
+        x: 10
+        y: 83
+        width: 44
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d94f2baba588c620800000000000000
-      internalID: 2794630541141297616
+      spriteID: e32fa3682a04c1990800000000000000
+      internalID: -7413979819777789378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Short Snek_1
+      name: Reset Button_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 130
-        width: 58
-        height: 62
+        x: 74
+        y: 83
+        width: 44
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c48ec736059f20270800000000000000
-      internalID: 8215402793939036236
+      spriteID: 82a3af461c64e4320800000000000000
+      internalID: 2544048635947661864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Short Snek_2
+      name: Reset Button_2
       rect:
         serializedVersion: 2
-        x: 131
-        y: 131
-        width: 57
-        height: 61
+        x: 10
+        y: 19
+        width: 44
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 393207fd271ed1330800000000000000
-      internalID: 3683347953750123411
+      spriteID: ad895d438149992a0800000000000000
+      internalID: -6730185336441956134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Short Snek_3
+      name: Reset Button_3
       rect:
         serializedVersion: 2
-        x: 3
-        y: 68
-        width: 56
-        height: 60
+        x: 74
+        y: 19
+        width: 44
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,71 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68fd05aa45e621b80800000000000000
-      internalID: -8425550642943041658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Short Snek_4
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 67
-        width: 57
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdd9d919a4db593e0800000000000000
-      internalID: -2047522327601766948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Short Snek_5
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 66
-        width: 58
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a24fcc8de9747cc90800000000000000
-      internalID: -7149667135859657686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Short Snek_6
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 1
-        width: 58
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa6d305f4daf08e60800000000000000
-      internalID: 7962639933741717167
+      spriteID: e3d7cf49a7fc5b900800000000000000
+      internalID: 699693442518515006
       vertices: []
       indices: 
       edges: []
