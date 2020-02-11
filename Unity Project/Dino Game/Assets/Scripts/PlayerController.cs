@@ -21,12 +21,17 @@ public class PlayerController : MonoBehaviour
     public static bool crouching = false;
     public static bool dead;
 
+    private RandomContainer randomC;
+    public AudioClip[] jumpClips;
+
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         dead = false;
+
+        randomC = GetComponent<RandomContainer>();
     }
 
     // Update is called once per frame
@@ -94,7 +99,10 @@ public class PlayerController : MonoBehaviour
         if ( dead != true)
         {
             //creates new vector for jump movement
-            SoundManager.PlaySound("Jump");
+            //SoundManager.PlaySound("Jump");
+            randomC.clips = jumpClips;
+            randomC.PlaySound(false);
+
             Vector3 jumpMovement = new Vector3(0.0f, 1.0f, 0.0f);
             //sets player velocity to jumpmovement * jumpspeed
             myRB.velocity = jumpMovement * jumpSpeed;

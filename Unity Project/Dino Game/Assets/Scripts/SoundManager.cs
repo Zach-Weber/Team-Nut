@@ -17,7 +17,8 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Jump = Resources.Load<AudioClip>("Jump");
+        //Jump functionality changed to use random container
+        //Jump = Resources.Load<AudioClip>("Jump");
         Hit = Resources.Load<AudioClip>("Hit");
         Point = Resources.Load<AudioClip>("Point");
         AudioSrc = GetComponent<AudioSource>();
@@ -27,9 +28,9 @@ public class SoundManager : MonoBehaviour
     {
         switch (clip)
         {
-            case "Jump":
+            /*case "Jump":
                 AudioSrc.PlayOneShot(Jump);
-                break;
+                break;*/
             case "Hit":
                 AudioSrc.PlayOneShot(Hit);
                 break;
