@@ -16,8 +16,11 @@ https://docs.google.com/presentation/d/1qMOwyQQz7e4QFa1L4-4pzbsn0N46c2rJjOSWJc8b
 ### Pitch Presentation:
 https://docs.google.com/presentation/d/1-5izmCGSC6MOeY0Gpwm_dgc-hKxpGTnGflWzh9va3Lc/edit?usp=sharing
 
-### Schedules:
-https://docs.google.com/spreadsheets/d/19Em5CBO2ymeFC5B--mSLy7dt5S6KZ6oLOAOInFh3Jhk/edit?usp=sharing
+### Schedules:  
+https://docs.google.com/spreadsheets/d/19Em5CBO2ymeFC5B--mSLy7dt5S6KZ6oLOAOInFh3Jhk/edit?usp=sharing  
+  
+### Final Presentation:  
+https://docs.google.com/presentation/d/1nBMx-lT83HztzVkZrzMfE9reDIgq1NLEa4z4sO_gEH4/edit?usp=sharing  
   
 ## Team Members
 Gamer Director: Xander  
