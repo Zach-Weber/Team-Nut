@@ -188,9 +188,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: d5318a762e034b741a41111a080fe2fd,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: d5318a762e034b741a41111a080fe2fd, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: d5318a762e034b741a41111a080fe2fd, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -991,4 +992,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accb25b5ace625e4faae60833828875e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: XanderTest
+  NextScene: PlusGame
