@@ -62,7 +62,7 @@ public class NewScoreScript : MonoBehaviour
             }**/
             //Debug.Log(Time.deltaTime);
 
-            score += (int) (Time.deltaTime * 125);
+            score += (int) (Time.deltaTime * 100);
 
             // score = +(int)GameObject.Find("Player").transform.position.x;
             // score += 4;
