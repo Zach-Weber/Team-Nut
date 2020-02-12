@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Audio;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,14 +24,13 @@ public class PlayerController : MonoBehaviour
 
     private RandomContainer randomC;
     public AudioClip[] jumpClips;
-
+    
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         dead = false;
-
         randomC = GetComponent<RandomContainer>();
     }
 
@@ -100,13 +100,15 @@ public class PlayerController : MonoBehaviour
         {
             //creates new vector for jump movement
             //SoundManager.PlaySound("Jump");
-            randomC.clips = jumpClips;
-            randomC.PlaySound(false);
+
+            Debug.Log("JUMP CLIPS SIZE: "+jumpClips.Length);
 
             Vector3 jumpMovement = new Vector3(0.0f, 1.0f, 0.0f);
             //sets player velocity to jumpmovement * jumpspeed
             myRB.velocity = jumpMovement * jumpSpeed;
             grounded = false;
+            randomC.clips = jumpClips;
+            randomC.PlaySound(false);
         }
 
     }

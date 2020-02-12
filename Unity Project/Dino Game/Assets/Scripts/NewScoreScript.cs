@@ -60,7 +60,7 @@ public class NewScoreScript : MonoBehaviour
                 
                 timer = 0;
             }**/
-            Debug.Log(Time.deltaTime);
+            //Debug.Log(Time.deltaTime);
 
             score += (int) (Time.deltaTime * 125);
 
