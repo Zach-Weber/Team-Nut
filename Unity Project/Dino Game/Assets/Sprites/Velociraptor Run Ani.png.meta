@@ -29,6 +29,33 @@ TextureImporter:
   - first:
       213: 5461258132708452973
     second: Velociraptor Run Ani_8
+  - first:
+      213: 3784778530975298907
+    second: Velociraptor Run Ani_0
+  - first:
+      213: 4230797222633822142
+    second: Velociraptor Run Ani_1
+  - first:
+      213: -5306090883598595520
+    second: Velociraptor Run Ani_2
+  - first:
+      213: -3077120311630587131
+    second: Velociraptor Run Ani_3
+  - first:
+      213: -8927974737514425212
+    second: Velociraptor Run Ani_4
+  - first:
+      213: -4882482345581829130
+    second: Velociraptor Run Ani_5
+  - first:
+      213: 8426230126788053872
+    second: Velociraptor Run Ani_6
+  - first:
+      213: 2970064440822548094
+    second: Velociraptor Run Ani_7
+  - first:
+      213: 1377826422765381592
+    second: Velociraptor Run Ani_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -72,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,10 +155,10 @@ TextureImporter:
       name: Velociraptor Run Ani_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 128
-        width: 62
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 092906c3d867dbfd0800000000000000
-      internalID: -2324571483677879664
+      spriteID: b55be44750c368430800000000000000
+      internalID: 3784778530975298907
       vertices: []
       indices: 
       edges: []
@@ -149,10 +176,10 @@ TextureImporter:
       name: Velociraptor Run Ani_1
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 128
-        width: 62
-        height: 61
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e62f46b290a77240800000000000000
-      internalID: 4789473280716121828
+      spriteID: eb75cc388afc6ba30800000000000000
+      internalID: 4230797222633822142
       vertices: []
       indices: 
       edges: []
@@ -170,10 +197,10 @@ TextureImporter:
       name: Velociraptor Run Ani_2
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 128
-        width: 62
-        height: 62
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfd859c7e73a2d3a0800000000000000
-      internalID: -6642066736766677509
+      spriteID: 04aca29447afc56b0800000000000000
+      internalID: -5306090883598595520
       vertices: []
       indices: 
       edges: []
@@ -191,10 +218,10 @@ TextureImporter:
       name: Velociraptor Run Ani_3
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 64
-        width: 62
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b5e1437aa1b9b240800000000000000
-      internalID: 4808069422830970288
+      spriteID: 50b9e1e316fdb45d0800000000000000
+      internalID: -3077120311630587131
       vertices: []
       indices: 
       edges: []
@@ -212,10 +239,10 @@ TextureImporter:
       name: Velociraptor Run Ani_4
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 64
-        width: 62
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fded9a6b795512690800000000000000
-      internalID: -7628722183695900961
+      spriteID: 4849ac65746791480800000000000000
+      internalID: -8927974737514425212
       vertices: []
       indices: 
       edges: []
@@ -233,10 +260,10 @@ TextureImporter:
       name: Velociraptor Run Ani_5
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 64
-        width: 62
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa0837004648ad600800000000000000
-      internalID: 493852674189656239
+      spriteID: 6f3aa79dc20fd3cb0800000000000000
+      internalID: -4882482345581829130
       vertices: []
       indices: 
       edges: []
@@ -254,10 +281,10 @@ TextureImporter:
       name: Velociraptor Run Ani_6
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 62
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b46122d9cbb86eb0800000000000000
-      internalID: -4726321333437111112
+      spriteID: 07b85eef7abffe470800000000000000
+      internalID: 8426230126788053872
       vertices: []
       indices: 
       edges: []
@@ -275,10 +302,10 @@ TextureImporter:
       name: Velociraptor Run Ani_7
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 62
-        height: 61
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07567eb6d72153b50800000000000000
-      internalID: 6572179561107645808
+      spriteID: e764f337fd9c73920800000000000000
+      internalID: 2970064440822548094
       vertices: []
       indices: 
       edges: []
@@ -296,10 +323,10 @@ TextureImporter:
       name: Velociraptor Run Ani_8
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 0
-        width: 62
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,8 +334,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6aecc236594acb40800000000000000
-      internalID: 5461258132708452973
+      spriteID: 8d7e31bd4d50f1310800000000000000
+      internalID: 1377826422765381592
       vertices: []
       indices: 
       edges: []

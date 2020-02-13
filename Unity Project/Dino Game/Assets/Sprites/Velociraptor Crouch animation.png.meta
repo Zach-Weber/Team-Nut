@@ -29,6 +29,75 @@ TextureImporter:
   - first:
       213: 7105698628070091477
     second: Velociraptor Crouch animation_8
+  - first:
+      213: 6703947493543330
+    second: Velociraptor Crouch animation_0
+  - first:
+      213: 7658990392977249885
+    second: Velociraptor Crouch animation_1
+  - first:
+      213: -730144094902790916
+    second: Velociraptor Crouch animation_2
+  - first:
+      213: -379653784697839079
+    second: Velociraptor Crouch animation_3
+  - first:
+      213: -7242888796989368201
+    second: Velociraptor Crouch animation_4
+  - first:
+      213: -2487175693094299029
+    second: Velociraptor Crouch animation_5
+  - first:
+      213: 2783760953524055589
+    second: Velociraptor Crouch animation_6
+  - first:
+      213: -1594326876434664808
+    second: Velociraptor Crouch animation_7
+  - first:
+      213: -5896000575156910795
+    second: Velociraptor Crouch animation_8
+  - first:
+      213: 3839147317987145308
+    second: Velociraptor Crouch animation_9
+  - first:
+      213: -1862750573085834412
+    second: Velociraptor Crouch animation_10
+  - first:
+      213: -542714975046809419
+    second: Velociraptor Crouch animation_11
+  - first:
+      213: -5926731614302350108
+    second: Velociraptor Crouch animation_12
+  - first:
+      213: 8199127882369324114
+    second: Velociraptor Crouch animation_13
+  - first:
+      213: -4999778369270960307
+    second: Velociraptor Crouch animation_14
+  - first:
+      213: -8284564525977891276
+    second: Velociraptor Crouch animation_15
+  - first:
+      213: 5152097254320995717
+    second: Velociraptor Crouch animation_16
+  - first:
+      213: 2068715181651257832
+    second: Velociraptor Crouch animation_17
+  - first:
+      213: 8114588964601494738
+    second: Velociraptor Crouch animation_9
+  - first:
+      213: 4814641567981823008
+    second: Velociraptor Crouch animation_10
+  - first:
+      213: -1719815583462129199
+    second: Velociraptor Crouch animation_11
+  - first:
+      213: 7085048479096949748
+    second: Velociraptor Crouch animation_12
+  - first:
+      213: -907043721888473371
+    second: Velociraptor Crouch animation_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -72,7 +141,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,10 +197,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_0
       rect:
         serializedVersion: 2
-        x: 27
+        x: 0
         y: 256
-        width: 68
-        height: 41
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a485c8492782724e0800000000000000
-      internalID: -2006590636386658230
+      spriteID: 2ad02f86431d71000800000000000000
+      internalID: 6703947493543330
       vertices: []
       indices: 
       edges: []
@@ -149,10 +218,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_1
       rect:
         serializedVersion: 2
-        x: 155
+        x: 128
         y: 256
-        width: 68
-        height: 44
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5fa7aefdc339f490800000000000000
-      internalID: -7712075927061549221
+      spriteID: d56d98fee233a4a60800000000000000
+      internalID: 7658990392977249885
       vertices: []
       indices: 
       edges: []
@@ -170,10 +239,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_2
       rect:
         serializedVersion: 2
-        x: 27
+        x: 0
         y: 192
-        width: 68
-        height: 45
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abf2614a204837430800000000000000
-      internalID: 3779509659171696570
+      spriteID: cf4587c60d10ed5f0800000000000000
+      internalID: -730144094902790916
       vertices: []
       indices: 
       edges: []
@@ -191,10 +260,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_3
       rect:
         serializedVersion: 2
-        x: 155
+        x: 128
         y: 192
-        width: 68
-        height: 42
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91201f30673c94210800000000000000
-      internalID: 1317799277622264345
+      spriteID: 912e371f4e23bbaf0800000000000000
+      internalID: -379653784697839079
       vertices: []
       indices: 
       edges: []
@@ -212,10 +281,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_4
       rect:
         serializedVersion: 2
-        x: 27
+        x: 0
         y: 128
-        width: 68
-        height: 41
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0564f8086a995af0800000000000000
-      internalID: -407124519682808566
+      spriteID: 778dacb73071c7b90800000000000000
+      internalID: -7242888796989368201
       vertices: []
       indices: 
       edges: []
@@ -233,10 +302,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_5
       rect:
         serializedVersion: 2
-        x: 155
+        x: 128
         y: 128
-        width: 68
-        height: 40
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67b932196ba584650800000000000000
-      internalID: 6217319025750547318
+      spriteID: b6ad02f72e6cb7dd0800000000000000
+      internalID: -2487175693094299029
       vertices: []
       indices: 
       edges: []
@@ -254,10 +323,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_6
       rect:
         serializedVersion: 2
-        x: 27
+        x: 0
         y: 64
-        width: 68
-        height: 41
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +334,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e72f0784676ab1ac0800000000000000
-      internalID: -3883327226725207426
+      spriteID: 52e676696d7e1a620800000000000000
+      internalID: 2783760953524055589
       vertices: []
       indices: 
       edges: []
@@ -275,10 +344,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_7
       rect:
         serializedVersion: 2
-        x: 155
+        x: 128
         y: 64
-        width: 68
-        height: 44
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 285d45af94dd77370800000000000000
-      internalID: 8320362146392495490
+      spriteID: 892f04a2720dfd9e0800000000000000
+      internalID: -1594326876434664808
       vertices: []
       indices: 
       edges: []
@@ -296,10 +365,10 @@ TextureImporter:
       name: Velociraptor Crouch animation_8
       rect:
         serializedVersion: 2
-        x: 27
+        x: 0
         y: 0
-        width: 68
-        height: 42
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5da291f21438c9260800000000000000
-      internalID: 7105698628070091477
+      spriteID: 535064a17b23d2ea0800000000000000
+      internalID: -5896000575156910795
       vertices: []
       indices: 
       edges: []
