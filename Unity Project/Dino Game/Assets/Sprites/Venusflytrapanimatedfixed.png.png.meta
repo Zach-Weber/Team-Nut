@@ -29,6 +29,33 @@ TextureImporter:
   - first:
       213: 6242189833135315343
     second: Venusflytrapanimatedfixed.png_8
+  - first:
+      213: -2487684312013400209
+    second: Venusflytrapanimatedfixed.png_0
+  - first:
+      213: 1693536525786129388
+    second: Venusflytrapanimatedfixed.png_1
+  - first:
+      213: 4075890728374409763
+    second: Venusflytrapanimatedfixed.png_2
+  - first:
+      213: -6370463412462667627
+    second: Venusflytrapanimatedfixed.png_3
+  - first:
+      213: 3927243937806423101
+    second: Venusflytrapanimatedfixed.png_4
+  - first:
+      213: -4533001111503363400
+    second: Venusflytrapanimatedfixed.png_5
+  - first:
+      213: -1893810005318592886
+    second: Venusflytrapanimatedfixed.png_6
+  - first:
+      213: 7838601824768227911
+    second: Venusflytrapanimatedfixed.png_7
+  - first:
+      213: -1386290257359967193
+    second: Venusflytrapanimatedfixed.png_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,10 +155,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_0
       rect:
         serializedVersion: 2
-        x: 22
+        x: 0
         y: 128
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f2279801737e8640800000000000000
-      internalID: 5084127958660489973
+      spriteID: f67112d6c48f97dd0800000000000000
+      internalID: -2487684312013400209
       vertices: []
       indices: 
       edges: []
@@ -149,10 +176,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_1
       rect:
         serializedVersion: 2
-        x: 86
+        x: 64
         y: 128
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f0e1fcb4d6476880800000000000000
-      internalID: -8617841482433175306
+      spriteID: ce3a1a95f76a08710800000000000000
+      internalID: 1693536525786129388
       vertices: []
       indices: 
       edges: []
@@ -170,10 +197,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 128
         y: 128
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e708a769b9df4ad0800000000000000
-      internalID: -2715712659949877273
+      spriteID: 32a9010c509709830800000000000000
+      internalID: 4075890728374409763
       vertices: []
       indices: 
       edges: []
@@ -191,10 +218,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_3
       rect:
         serializedVersion: 2
-        x: 22
+        x: 0
         y: 64
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92b00d16a1cfc1420800000000000000
-      internalID: 2602231874953677609
+      spriteID: 5983a8d47419797a0800000000000000
+      internalID: -6370463412462667627
       vertices: []
       indices: 
       edges: []
@@ -212,10 +239,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_4
       rect:
         serializedVersion: 2
-        x: 86
+        x: 64
         y: 64
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66db084911fe15f0800000000000000
-      internalID: -783924194230675858
+      spriteID: d341243dd8f508630800000000000000
+      internalID: 3927243937806423101
       vertices: []
       indices: 
       edges: []
@@ -233,10 +260,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_5
       rect:
         serializedVersion: 2
-        x: 150
+        x: 128
         y: 64
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4beb6a8e9fccbf140800000000000000
-      internalID: 4754619205341855412
+      spriteID: 8b22466818b8711c0800000000000000
+      internalID: -4533001111503363400
       vertices: []
       indices: 
       edges: []
@@ -254,10 +281,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_6
       rect:
         serializedVersion: 2
-        x: 22
+        x: 0
         y: 0
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8773e00aefa0a50800000000000000
-      internalID: 6488278176567359714
+      spriteID: a8697e085d5d7b5e0800000000000000
+      internalID: -1893810005318592886
       vertices: []
       indices: 
       edges: []
@@ -275,10 +302,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_7
       rect:
         serializedVersion: 2
-        x: 86
+        x: 64
         y: 0
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61daaaa636b6ac6d0800000000000000
-      internalID: -2969442929561916138
+      spriteID: 74af90534de48cc60800000000000000
+      internalID: 7838601824768227911
       vertices: []
       indices: 
       edges: []
@@ -296,10 +323,10 @@ TextureImporter:
       name: Venusflytrapanimatedfixed.png_8
       rect:
         serializedVersion: 2
-        x: 150
+        x: 128
         y: 0
-        width: 19
-        height: 41
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,8 +334,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f89d598a496b0a650800000000000000
-      internalID: 6242189833135315343
+      spriteID: 72c69761b58e2cce0800000000000000
+      internalID: -1386290257359967193
       vertices: []
       indices: 
       edges: []

@@ -125,7 +125,7 @@ public class PlusGroundGenerate : MonoBehaviour
                 Instantiate(PlusSelectSprite(), new Vector3(plusPos17, -2.3f, 0), Quaternion.identity);
                 plusPos17 += 10.804f;
 
-                Instantiate(PlusSelectObstacle(), new Vector3(plusObstaclePos + Random.Range(plusObstacleRangeMin, plusObstacleRangeMax), -2.2f, 0), Quaternion.identity);
+                Instantiate(PlusSelectObstacle(), new Vector3(plusObstaclePos + Random.Range(plusObstacleRangeMin, plusObstacleRangeMax), -2, 0), Quaternion.identity);
                 plusObstaclePos += 10f;
 
                 Instantiate(background, new Vector3(backgroundPos, 0.2f, 5), Quaternion.identity);
