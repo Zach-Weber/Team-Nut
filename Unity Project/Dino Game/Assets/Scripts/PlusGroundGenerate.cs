@@ -51,8 +51,10 @@ public class PlusGroundGenerate : MonoBehaviour
     public float plusObstacleRangeMax;
     public float plusObstacleRangeMin;
     public float backgroundPos;
+    public float treePos;
     private GameObject plusSpriteSelect;
     private GameObject plusObstacleSelect;
+    private GameObject treeSelect;
     private int plusCloneCount;
 
     // Start is called before the first frame update
@@ -123,11 +125,23 @@ public class PlusGroundGenerate : MonoBehaviour
                 Instantiate(PlusSelectSprite(), new Vector3(plusPos17, -2.3f, 0), Quaternion.identity);
                 plusPos17 += 10.804f;
 
-                Instantiate(PlusSelectObstacle(), new Vector3(plusObstaclePos + Random.Range(plusObstacleRangeMin, plusObstacleRangeMax), -2.3f, 0), Quaternion.identity);
-                plusObstaclePos += 15f;
+                Instantiate(PlusSelectObstacle(), new Vector3(plusObstaclePos + Random.Range(plusObstacleRangeMin, plusObstacleRangeMax), -2.2f, 0), Quaternion.identity);
+                plusObstaclePos += 10f;
 
                 Instantiate(background, new Vector3(backgroundPos, 0.2f, 5), Quaternion.identity);
                 backgroundPos += 27.86f;
+
+                Instantiate(TreeSelect(), new Vector3(treePos, 0, 1), Quaternion.identity);
+                treePos += 3.11f;
+
+                Instantiate(TreeSelect(), new Vector3(treePos, 0, 1), Quaternion.identity);
+                treePos += 3.11f;
+
+                Instantiate(TreeSelect(), new Vector3(treePos, 0, 1), Quaternion.identity);
+                treePos += 3.11f;
+
+                Instantiate(TreeSelect(), new Vector3(treePos, 0, 1), Quaternion.identity);
+                treePos += 3.11f;
             }
 
             if (PlayerController.dead == true && plusCloneCount == 0)
@@ -147,7 +161,7 @@ public class PlusGroundGenerate : MonoBehaviour
 
     private GameObject PlusSelectSprite()
     {
-        switch (Random.Range(1, 4))
+        switch (Random.Range(1, 6))
         {
             case 1:
                 plusSpriteSelect = plusSprite1;
@@ -186,5 +200,26 @@ public class PlusGroundGenerate : MonoBehaviour
                 //break;
         }
         return plusObstacleSelect;
+    }
+
+    private GameObject TreeSelect()
+    {
+        switch (Random.Range(1, 4))
+        {
+            case 1:
+                treeSelect = tree1;
+                break;
+            case 2:
+                treeSelect = tree2;
+                break;
+            case 3:
+                treeSelect = tree3;
+                break;
+            case 4:
+                treeSelect = tree4;
+                break;
+                
+        }
+        return treeSelect;
     }
 }

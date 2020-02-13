@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2915003351829392293}
   - component: {fileID: 5626387662945450073}
   - component: {fileID: 7927963201458823567}
-  - component: {fileID: 5176730241672882662}
+  - component: {fileID: 8343196591116488514}
   m_Layer: 0
   m_Name: FrontLog
   m_TagString: Obstacle
@@ -104,7 +104,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &5176730241672882662
+--- !u!60 &8343196591116488514
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
